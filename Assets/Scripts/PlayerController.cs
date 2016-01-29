@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
 		rb.AddForce (movement * speed);
+
 	}
 
 	void OnTriggerEnter(Collider other) 
@@ -29,4 +30,9 @@ public class PlayerController : MonoBehaviour {
 			Application.LoadLevel(Application.loadedLevel);
 		}
 	}
+
+
+		
+
+
 }
