@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public float speed;
+	public float torque;
 
 	private Rigidbody rb;
 
@@ -19,8 +20,9 @@ public class PlayerController : MonoBehaviour {
 
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
-		rb.AddForce (movement * speed);
-
+		rb.AddTorque(-transform.up * torque * moveHorizontal, ForceMode.VelocityChange);
+		rb.AddTorque(transform.right * torque * moveVertical, ForceMode.VelocityChange);
+		rb.AddForce (movement * speed, ForceMode.Impulse);
 	}
 
 	void OnTriggerEnter(Collider other) 
