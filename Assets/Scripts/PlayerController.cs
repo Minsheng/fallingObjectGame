@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
 	public float speed;
 	public float torque;
+	public bool isFlippable = false;
 
 	private Rigidbody rb;
 
@@ -20,16 +22,24 @@ public class PlayerController : MonoBehaviour {
 
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
-		rb.AddTorque(-transform.up * torque * moveHorizontal, ForceMode.VelocityChange);
-		rb.AddTorque(transform.right * torque * moveVertical, ForceMode.VelocityChange);
-		rb.AddForce (movement * speed, ForceMode.Impulse);
+		if (isFlippable) {
+			rb.AddTorque(-transform.up * torque * moveHorizontal, ForceMode.VelocityChange);
+			rb.AddTorque(transform.right * torque * moveVertical, ForceMode.VelocityChange);
+		}
+
+		rb.AddForce (movement * speed);
 	}
 
 	void OnTriggerEnter(Collider other) 
 	{
 		if (other.gameObject.CompareTag ("Platform"))
 		{
-			Application.LoadLevel(Application.loadedLevel);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+
+		if (other.gameObject.CompareTag ("Level1EndingTrigger"))
+		{
+			SceneManager.LoadScene(2);
 		}
 	}
 
