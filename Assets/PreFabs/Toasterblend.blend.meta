@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: d5f98ba42faea4af7a9c14b2f5bcf3ca
+timeCreated: 1454608236
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 5Gon001
+    100002: 5Gon002
+    100004: crvToasterSpiral
+    100006: crvToasterSpiral_001
+    100008: crvToasterSpiralNet
+    100010: crvToasterSpiralNet_001
+    100012: crvToasterSpiralNet_002
+    100014: crvToasterSpiralNet_003
+    100016: crvToasterSpiralNet_004
+    100018: crvToasterSpiralNet_005
+    100020: crvToasterSpiralNet_006
+    100022: crvToasterSpiralNet_007
+    100024: crvToasterSpiralNet_008
+    100026: crvToasterSpiralNet_009
+    100028: crvToasterSpiralNet_010
+    100030: crvToasterSpiralNet_011
+    100032: objToasterBase
+    100034: objToasterHandles
+    100036: objToasterInsidePlastic
+    100038: objToasterMain
+    100040: objToasterMSides
+    100042: objToasterPuller
+    100044: objToasterWheel
+    100046: //RootNode
+    400000: 5Gon001
+    400002: 5Gon002
+    400004: crvToasterSpiral
+    400006: crvToasterSpiral_001
+    400008: crvToasterSpiralNet
+    400010: crvToasterSpiralNet_001
+    400012: crvToasterSpiralNet_002
+    400014: crvToasterSpiralNet_003
+    400016: crvToasterSpiralNet_004
+    400018: crvToasterSpiralNet_005
+    400020: crvToasterSpiralNet_006
+    400022: crvToasterSpiralNet_007
+    400024: crvToasterSpiralNet_008
+    400026: crvToasterSpiralNet_009
+    400028: crvToasterSpiralNet_010
+    400030: crvToasterSpiralNet_011
+    400032: objToasterBase
+    400034: objToasterHandles
+    400036: objToasterInsidePlastic
+    400038: objToasterMain
+    400040: objToasterMSides
+    400042: objToasterPuller
+    400044: objToasterWheel
+    400046: //RootNode
+    2300000: 5Gon001
+    2300002: 5Gon002
+    2300004: crvToasterSpiral
+    2300006: crvToasterSpiral_001
+    2300008: crvToasterSpiralNet
+    2300010: crvToasterSpiralNet_001
+    2300012: crvToasterSpiralNet_002
+    2300014: crvToasterSpiralNet_003
+    2300016: crvToasterSpiralNet_004
+    2300018: crvToasterSpiralNet_005
+    2300020: crvToasterSpiralNet_006
+    2300022: crvToasterSpiralNet_007
+    2300024: crvToasterSpiralNet_008
+    2300026: crvToasterSpiralNet_009
+    2300028: crvToasterSpiralNet_010
+    2300030: crvToasterSpiralNet_011
+    2300032: objToasterBase
+    2300034: objToasterHandles
+    2300036: objToasterInsidePlastic
+    2300038: objToasterMain
+    2300040: objToasterMSides
+    2300042: objToasterPuller
+    2300044: objToasterWheel
+    3300000: 5Gon001
+    3300002: 5Gon002
+    3300004: crvToasterSpiral
+    3300006: crvToasterSpiral_001
+    3300008: crvToasterSpiralNet
+    3300010: crvToasterSpiralNet_001
+    3300012: crvToasterSpiralNet_002
+    3300014: crvToasterSpiralNet_003
+    3300016: crvToasterSpiralNet_004
+    3300018: crvToasterSpiralNet_005
+    3300020: crvToasterSpiralNet_006
+    3300022: crvToasterSpiralNet_007
+    3300024: crvToasterSpiralNet_008
+    3300026: crvToasterSpiralNet_009
+    3300028: crvToasterSpiralNet_010
+    3300030: crvToasterSpiralNet_011
+    3300032: objToasterBase
+    3300034: objToasterHandles
+    3300036: objToasterInsidePlastic
+    3300038: objToasterMain
+    3300040: objToasterMSides
+    3300042: objToasterPuller
+    3300044: objToasterWheel
+    4300000: 5Gon002
+    4300002: 5Gon001
+    4300004: objToasterWheel
+    4300006: objToasterPuller
+    4300008: crvToasterSpiral_001
+    4300010: crvToasterSpiralNet_011
+    4300012: crvToasterSpiralNet_010
+    4300014: crvToasterSpiralNet_009
+    4300016: crvToasterSpiralNet_005
+    4300018: crvToasterSpiralNet_004
+    4300020: crvToasterSpiralNet_003
+    4300022: crvToasterSpiral
+    4300024: crvToasterSpiralNet_008
+    4300026: crvToasterSpiralNet_007
+    4300028: crvToasterSpiralNet_006
+    4300030: crvToasterSpiralNet_002
+    4300032: crvToasterSpiralNet_001
+    4300034: crvToasterSpiralNet
+    4300036: objToasterMain
+    4300038: objToasterMSides
+    4300040: objToasterHandles
+    4300042: objToasterBase
+    4300044: objToasterInsidePlastic
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
