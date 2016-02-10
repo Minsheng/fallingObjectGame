@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag ("Platform"))
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+//			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 
 		if (other.gameObject.CompareTag ("Level1EndingTrigger"))
