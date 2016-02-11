@@ -35,17 +35,6 @@ public class PlayerController : MonoBehaviour {
 		rb.AddForce (movement * speed);
 	}
 
-//	void OnCollisionEnter(Collision collision) {
-//		ContactPoint contact = collision.contacts[0];
-//		Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-//		Vector3 pos = contact.point;
-//		Rigidbody targetRb = collision.gameObject.GetComponent<Rigidbody> ();
-//
-//		if (targetRb) {
-//			targetRb.AddForce (pos * speed);
-//		}
-//	}
-
 	void OnTriggerEnter(Collider other) 
 	{
 		if (other.gameObject.CompareTag ("Platform"))
