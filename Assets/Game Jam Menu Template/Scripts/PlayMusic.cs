@@ -40,4 +40,8 @@ public class PlayMusic : MonoBehaviour {
 		//call the TransitionTo function of the audioMixerSnapshot volumeDown;
 		volumeDown.TransitionTo (fadeTime);
 	}
+
+	public void Stop() {
+		musicSource.Stop ();
+	}
 }

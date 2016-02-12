@@ -5,47 +5,35 @@ using System;
 
 public class GameManager : MonoBehaviour {
 
-	public GameObject playerPrefab;
-	public static GameObject playerObject;
-//	public Text continueText;
-//	public Text scoreText;
-
-//	private float timeElapsed = 0f;
-//	private float bestTime = 0f;
-//	private float blinkTime = 0f;
-//	private bool blink;
+	public GameObject[] playerPrefab; // list that holds character prefabs
+	public static GameObject playerObject; // player instance
+	private int characterType; // 1: Bread, 2: Hammer
 	private bool gameStarted;
-//	private TimeManager timeManager;
-//	public GameObject player;
-//	private Spawner spawner;
-//	private bool beatBestTime;
+	private PlayMusic playMusic;
 
 	void Awake(){
-//		spawner = GameObject.Find ("Spawner").GetComponent<Spawner> ();
-//		timeManager = GetComponent<TimeManager> ();
+		// get the character type set from Character Selection Menu
+		characterType = PlayerPrefs.GetInt ("character");
+		Debug.Log ("The current character is : " + characterType);
+//		playMusic = GetComponent<PlayMusic> ();
 	}
 
 	// Use this for initialization
 	void Start () {
 		initPlayer ();
-//		var floorHeight = floor.transform.localScale.y;
-//
-//		var pos = floor.transform.position;
-//		pos.x = 0;
-//		pos.y = -((Screen.height / PixelPerfectCamera.pixelsToUnits) / 2) + (floorHeight / 2);
-//		floor.transform.position = pos;
 
-//		spawner.active = false;
-
-//		Time.timeScale = 0;
-//
-//		continueText.text = "PRESS ANY BUTTON TO START";
-
-//		bestTime = PlayerPrefs.GetFloat ("BestTime");
+		// do not restart the background music
+//		DontDestroyOnLoad(playMusic);
 	}
 
 	void initPlayer() {
-		playerObject = GameObject.Instantiate (playerPrefab);
+		if (characterType != 0) {
+			playerObject = GameObject.Instantiate (playerPrefab [characterType-1]);	
+		} else {
+			playerObject = GameObject.Instantiate (playerPrefab[0]);
+		}
+
+		// attach camera to player
 		CameraController.player = playerObject;
 	}
 

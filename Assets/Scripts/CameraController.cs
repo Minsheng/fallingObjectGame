@@ -4,9 +4,9 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
 	public static GameObject player;
-	public float xOffset;
-	public float yOffset;
-	public float zOffset;
+	private float xOffset = 0;
+	private float yOffset = 8;
+	private float zOffset = 0;
 	private Vector3 offset;
 
 	/* manually set the starting position */

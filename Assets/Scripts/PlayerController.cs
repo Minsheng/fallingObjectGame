@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
+	public int maxHealth;
 	public float speed;
 	public float torque;
 	public bool isFlippable = false;
@@ -37,19 +38,18 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.gameObject.CompareTag ("Platform"))
+		int nextLevel = SceneManager.GetActiveScene ().buildIndex+1;
+
+		if (other.gameObject.CompareTag ("Level1EndingTrigger") || 
+			other.gameObject.CompareTag ("Level2EndingTrigger"))
 		{
-//			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			PlayerPrefs.SetInt ("winLevel", nextLevel);
+			SceneManager.LoadScene("PlayerWin");
 		}
 
-		if (other.gameObject.CompareTag ("Level1EndingTrigger"))
+		if (other.gameObject.CompareTag ("Level3EndingTrigger"))
 		{
-			SceneManager.LoadScene(2);
-		}
-
-		if (other.gameObject.CompareTag ("Level2EndingTrigger"))
-		{
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene("MainMenu");
 		}
 	}
 
