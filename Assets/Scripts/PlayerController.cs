@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (other.gameObject.CompareTag ("Level3EndingTrigger"))
 		{
-			SceneManager.LoadScene("MainMenu");
+			SceneManager.LoadScene("LevelCleared");
 		}
 	}
 
