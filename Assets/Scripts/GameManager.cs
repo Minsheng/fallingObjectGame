@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	void Awake(){
 		// get the character type set from Character Selection Menu
 		characterType = PlayerPrefs.GetInt ("character");
-		Debug.Log ("The current character is : " + characterType);
+//		Debug.Log ("The current character is : " + characterType);
 //		playMusic = GetComponent<PlayMusic> ();
 	}
 
