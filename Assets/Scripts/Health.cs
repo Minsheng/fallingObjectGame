@@ -34,14 +34,14 @@ public class Health : MonoBehaviour {
 	{
 		if (other.gameObject.CompareTag ("Platform"))
 		{
+			int characterType = PlayerPrefs.GetInt ("character");
+
 			if (this.currentHealth > 1) {
 				ReduceHealth (1);
 //				Debug.Log ("Remaining health:" + this.currentHealth);
 			} else {
 				// record the level where player fail
 				PlayerPrefs.SetInt ("failedLevel", SceneManager.GetActiveScene().buildIndex);
-
-				int characterType = PlayerPrefs.GetInt ("character");
 
 				switch(characterType) {
 				case 1: // bread
